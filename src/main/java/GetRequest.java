@@ -15,13 +15,6 @@ public class GetRequest {
     public static ObjectMapper mapper = new ObjectMapper();
 
     public static void main(String[] args) {
-//        try (CloseableHttpClient httpClient = HttpClientBuilder.create()
-//                .setDefaultRequestConfig(RequestConfig.custom()
-//                        .setConnectTimeout(5000)
-//                        .setSocketTimeout(30000)
-//                        .setRedirectsEnabled(false)
-//                        .build())
-//                .build()) {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             HttpGet request = new HttpGet(URL);
 

@@ -7,6 +7,9 @@ public class Data {
     private String user;
     private int upvotes;
 
+    public Data() {
+    }
+
     public Data(@JsonProperty("id") String id,
                 @JsonProperty("text") String text,
                 @JsonProperty("type") String type,
@@ -37,6 +40,26 @@ public class Data {
 
     public int getUpvotes() {
         return upvotes;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public void setUpvotes(int upvotes) {
+        this.upvotes = upvotes;
     }
 
     @Override
